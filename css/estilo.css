@@ -1,0 +1,707 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+body{
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    scroll-behavior: auto;
+} 
+.heder{
+    background-color: #000;
+    transition: background-color 0.5s linear ;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0.5px;
+} 
+.heder:hover{
+    background-color: #049ef7;
+}
+.nav:hover{
+    background-color: #049ef7;
+}
+ ul, li{
+    list-style: none;
+}
+.nav li a{
+    background-color:#000;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 1.5em;
+} 
+.nav li a:hover{
+    background-color: #049ef7;
+}
+.nav > li{
+    float: left;
+}
+.nav li ul{
+    display:none ;
+    position: absolute;
+    
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+.buscar {
+    width: 50%;
+    height: 70%;
+    padding: 14px 28px; 
+    border: none; 
+    color: black;
+    cursor: pointer; 
+    border-radius: 5px; 
+
+} 
+a{
+    text-shadow: 2px 2px 2px #ff0000;
+    background-color: #000;
+}
+.entrada-blog :hover > a{
+    background-color: #0088ff;
+}
+
+.btn {
+    border: none; 
+    color: black; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+  }
+.btn {background-color: white; border: 2px solid #04AA6D;} 
+.btn:hover {background-color: #46a049; color: white;}
+.buscar {background-color: #e7e7e7; color: black;} 
+.buscar:hover {background: #ddd;}
+.carousel{
+    background-size: cover;
+    z-index: -1;
+}
+
+p{
+    color: #ffffff;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.contenedor {
+    margin: 100 50px 100px 50px;
+    border: 10px;
+    padding: 20px 20px 20px 20px;
+}
+iframe{
+    margin: 50px 15px 50px 15px;
+    width: 700px;
+    height: 350px;
+
+}
+main p{
+    padding: 2px 2px 2px 2px;
+    font-size: 1.5em;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #000;
+}
+#contenedor1{
+    
+    max-width: 100%;
+    
+
+}  
+ #contenedor1 > img{
+    width: 100%;
+    height: 400px;
+    border: 3px solid black;
+    
+}
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #1500ff;
+
+}
+.h{
+    position: relative;
+    text-align: center;
+    padding: 0 100px;
+    top:150px;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #1500ff; 
+    
+
+ }
+ 
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 100px 100px 50px 20px;
+}
+
+.entrada-blog a {
+    display: inline-block;
+    color: white;
+    /* margin: 100px 0 50px 0; */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+article{
+    margin: 150px 2px 150px 2px;
+    padding: 20px;
+}
+
+.entrada-blog a:hover {
+    background-color: black;
+    transition: 0.3s;
+}
+#parrafo{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding: 50px 50px 50px 50px;
+    margin: 10px;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    padding: 20px 20px 20px 20px;
+}
+h3{
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #1500ff;
+}
+.imagen{
+    width: 100%;
+    height: 500px;
+}
+#contenedor1{
+    margin: 0px 0 150px 0;
+}
+.nav  .contenedor1 > h3{
+    z-index: -1;
+
+} 
+footer{
+    background-color: #000;
+    width: 100%;
+    margin: 100px 0 0 0;
+    padding: 10px 10px 10px 10px;
+    text-align: center
+}
+
+@media (max-width: 905px){
+    body{
+        background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+        scroll-behavior: auto;
+    } 
+    .heder{
+        background-color: #000;
+        transition: background-color 0.5s linear ;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: space-around;
+        position: sticky;
+        top: 0.5px;
+    } 
+    .heder:hover{
+        background-color: #3F51B5;
+    }
+    .nav:hover{
+        background-color: #3F51B5;
+    }
+     ul, li{
+        list-style: none;
+    }
+    .nav li a{
+        background-color:#000;
+        text-decoration: none;
+        padding: 10px 15px;
+        color: rgb(255, 255, 255);
+        display: block;
+        font-size: 1.5em;
+    } 
+    .nav li a:hover{
+        background-color: #3F51B5;
+    }
+    .nav > li{
+        float: left;
+    }
+    .nav li ul{
+        display:none ;
+        position: absolute;
+        
+    }
+    
+    .nav li:hover > ul{
+        display: block;
+    }
+    .buscar {
+        width: 50%;
+        height: 70%;
+        padding: 14px 28px; 
+        border: none; 
+        color: black;
+        cursor: pointer; 
+        border-radius: 5px; 
+    
+    } 
+    a{
+        text-shadow: 2px 2px 2px #ff0000;
+        background-color: #000;
+    }
+    .entrada-blog :hover > a{
+        background-color: #0088ff;
+    }
+    
+    .btn {
+        border: none; 
+        color: black; 
+        padding: 14px 28px; 
+        cursor: pointer; 
+        border-radius: 5px; 
+      }
+    .btn {background-color: white; border: 2px solid #04AA6D;} 
+    .btn:hover {background-color: #46a049; color: white;}
+    .buscar {background-color: #e7e7e7; color: black;} 
+    .buscar:hover {background: #ddd;}
+    .carousel{
+        background-size: cover;
+        z-index: -1;
+    }
+    
+    p{
+        color: #ffffff;
+        font-size: 1.2em;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    .contenedor {
+        margin: 100 50px 100px 50px;
+        border: 10px;
+        padding: 20px 20px 20px 20px;
+    }
+    iframe{
+        margin: 50px 15px 50px 15px;
+        width: 550px;
+        height: 300px;
+    
+    }
+    main p{
+        padding: 2px 2px 2px 2px;
+        font-size: 1.2em;
+        font-family:Arial, Helvetica, sans-serif;
+        color: #000;
+    }
+    #contenedor1{
+        
+        max-width: 100%;
+        
+    
+    }  
+     #contenedor1 > img{
+        width: 100%;
+        height: 400px;
+        border: 3px solid black;
+        
+    }
+    img {
+        max-width: 100%;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 2px 2px 2px #1500ff;
+    
+    }
+    .h{
+        position: relative;
+        text-align: center;
+        padding: 0 80px;
+        top:100px;
+        color: #ffffff;
+        text-shadow: 2px 2px 2px #1500ff; 
+        
+    
+     }
+     
+    .contenedor {
+        min-width: 900px;
+        width: 95%;
+        margin: 100px 100px 50px 20px;
+    }
+    
+    .entrada-blog a {
+        display: inline-block;
+        color: white;
+        /* margin: 100px 0 50px 0; */
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+    
+    }
+    article{
+        margin: 150px 2px 150px 2px;
+        padding: 20px;
+    }
+    
+    .entrada-blog a:hover {
+        background-color: black;
+        transition: 0.3s;
+    }
+    #parrafo{
+        color: #000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        padding: 20px 20px 20px 20px;
+        margin: 10px;
+    }
+    h3{
+        color: #ffffff;
+        text-shadow: 2px 2px 2px #1500ff;
+
+    }
+    h2{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.8em;
+        text-shadow: 2px 2px 2 #000000;
+    }
+    .imagen{
+        width: 100%;
+        height: 500px;
+    }
+    #contenedor1{
+        margin: 0px 0 150px 0;
+    }
+    .nav  .contenedor1 > h3{
+        z-index: -1;
+    
+    } 
+    footer{
+        background-color: #000;
+        width: 100%;
+        margin: 100px 0 0 0;
+        padding: 10px 10px 10px 10px;
+        text-align: center
+    }
+
+}
+
+
+
+@media (max-width: 900px){
+    
+    body{
+        background-image: linear-gradient(to top, #63bdea 0%, #63bdea  99%,  #63bdea 100%);
+    }
+    .heder{
+        background-color: #000;
+        transition: background-color 0.5s linear ;
+        display: grid;
+        grid-template-areas: "logo nav nav";
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative; 
+        
+    }
+    .heder:hover{
+        background-color: #0088ff;
+    }
+    .logo{
+        padding: 3px;
+    }
+    .nav{
+        padding: 5px 10px 0 10px;
+        margin-top: 15px;
+    }
+    .nav li a{
+        background-color:#000;
+        text-decoration: none;
+        padding: 2px 20px ;
+        color: rgb(255, 255, 255);
+        display: block;
+        font-size: 1.5em;
+        
+    } 
+    .buscar {
+        width: 60%;
+        height: 40%;
+        margin-top: 6px;
+        padding: 2px 2px; 
+        border: none; 
+        color: black;
+        cursor: pointer; 
+        border-radius: 5px; 
+    
+    } 
+    .btn {
+        width: 50%;
+        margin-top: 4px;
+        border: none; 
+        color: black; 
+        padding: 5px 2px 0 5px; 
+        cursor: pointer; 
+        border-bottom: 2px; 
+      }
+
+    .contenedor{
+        margin: 100px 70px 70px 0px;
+    }
+    #parrafo{
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        padding: 10px 10px 10px 10px;
+        margin: 10px;
+    }
+  
+    .texto{
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    iframe{
+        margin: 50px 15px 50px 15px;
+        width: 500px;
+        height: 250px;
+    
+    }
+    main p{
+        padding: 2px 2px 2px 2px;
+        font-size: 1.2em;
+        font-family:Arial, Helvetica, sans-serif;
+        color: #ffffff;
+    }
+    #contenedor1{
+        background-size: cover;
+        width: 100%;
+        height: 50%;
+        border: 2px ;
+    
+    } 
+    .h{
+      font-size: 20px;
+       padding: 5px;
+        
+    }
+    p{
+        font-size: 1em;
+      }
+}
+
+
+
+@media (max-width: 760px){
+    
+    body{
+        background-image: linear-gradient(to top, #63bdea 0%, #63bdea  99%,  #63bdea 100%);
+    }
+    .heder{
+        background-color: #000;
+        transition: background-color 0.5s linear ;
+        display: grid;
+        grid-template-areas: "logo nav nav";
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative; 
+        
+    }
+    .heder:hover{
+        background-color: #0088ff;
+    }
+    .logo{
+        padding: 3px;
+    }
+    .nav{
+        padding: 5px 5px 0 5px;
+        margin-top: 15px;
+    }
+    .nav li a{
+        background-color:#000;
+        text-decoration: none;
+        padding: 2px 5px ;
+        color: rgb(255, 255, 255);
+        display: block;
+        font-size: 1.2em;
+        
+    } 
+    .buscar {
+        width: 50%;
+        height: 40%;
+        margin-top: 20px;
+        padding: 2px 2px; 
+        border: none; 
+        color: black;
+        cursor: pointer; 
+        border-radius: 5px; 
+    
+    } 
+    .btn {
+        width: 45%;
+        height: 40%;
+        margin-top: 4px;
+        border: none; 
+        color: black; 
+        padding: 5px 2px 0 5px; 
+        cursor: pointer; 
+        border-bottom: 2px; 
+      }
+
+    .contenedor{
+        margin: 100px 70px 70px 0px;
+    }
+    #parrafo{
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        padding: 10px 10px 10px 10px;
+        margin: 10px;
+    }
+  
+    .texto{
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    iframe{
+        margin: 50px 15px 50px 15px;
+        width: 400px;
+        height: 300px;
+    
+    }
+    main p{
+        padding: 2px 2px 2px 2px;
+        font-size: 1em;
+        font-family:Arial, Helvetica, sans-serif;
+        color: #ffffff;
+    }
+    #contenedor1{
+        background-size: cover;
+        width: 100%;
+        height: 50%;
+        border: 2px ;
+    
+    }
+   
+    .h{
+        width: 100%;
+        font-size: 1em;
+        padding: 5px;
+        
+    }
+    p{
+        font-size: 1em;
+      }
+}
+
+
+@media (max-width: 600px){
+    
+    body{
+        background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    }
+    .heder{
+        background-color: #000;
+        transition: background-color 0.5s linear ;
+        display: grid;
+        grid-template-areas: "logo nav nav";
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative; 
+        
+    }
+    .heder:hover{
+        background-color: #0088ff;
+    }
+    .logo{
+        padding: 3px;
+    }
+    .nav{
+        padding: 5px 10px 0 10px;
+        margin-top: 15px;
+    }
+    .nav li a{
+        background-color:#000;
+        text-decoration: none;
+        padding: 2px 2px;
+        color: rgb(255, 255, 255);
+        display: block;
+        font-size: 0.8em;
+        
+    } 
+    .buscar {
+        width: 60%;
+        height: 40%;
+        margin-top: 6px;
+        padding: 2px 2px; 
+        border: none; 
+        color: black;
+        cursor: pointer; 
+        border-radius: 5px; 
+    
+    } 
+    .btn {
+        width: 50%;
+        margin-top: 4px;
+        border: none; 
+        color: black; 
+        padding: 5px 2px 0 5px; 
+        cursor: pointer; 
+        border-bottom: 2px; 
+      }
+    .contenedor{
+
+        margin: 100px 70px 70px 0px;
+    }
+    #parrafo{
+        color: #000000;
+        text-shadow: 2px 2px 2px #ffffff;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        padding: 5px 5px 5px 5px;
+        margin: 10px;
+    }
+  
+    .texto{
+        font-size: 0.7em;
+    }
+    iframe{
+        margin: 50px 15px 50px 15px;
+        width: 400px;
+        height: 200px;
+    
+    }
+    main p{
+        padding: 2px 2px 2px 2px;
+        font-size: 1em;
+        font-family:Arial, Helvetica, sans-serif;
+        color: #000;
+    }
+    #contenedor1{
+        background-size: cover;
+        width: 100%;
+        height: 50%;
+        border: 2px ;
+    
+    } 
+    .h{
+      font-size: 15px;
+       padding: 5px;
+        
+    }
+    p{
+        font-size: 0.7em;
+      }
+}

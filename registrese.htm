@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registrese.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="favicoin/—Pngtree—red sports car vector_2790711.ico" type="image/x-icon">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <div>
+        <main>
+            <form method="post">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <p>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </p>
+                    <p>
+                        <label for="Apellido">Apellido</label>
+                        <input type="text" name="Apellido" id="Apellido">
+                    </p>
+            
+                    <p>
+                        <label for="direccion">Direccion</label>
+                        <input type="text" name="direccion" id="direccion">
+                    </p>
+                    <p>
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" name="ciudad" id="ciudad">
+                    </p>
+                    <p>
+                        <label for="edad">Fecha de nacimiento</label>
+                        <input type="date" name="edad" id="edad">
+                    </p>
+                    <p>
+                        <label for="e-mail">E-mail</label>
+                        <input type="email" name="e-mail" id="e-mail">
+                    </p>
+                    <p>
+                        <label for="telefono">Telefono</label>
+                        <input type="number" name="telefono" id="telefono">
+                    </p>
+                    <p>
+                        <label for="password">password/label>
+                        <input type="password" name="password" id="password">
+                    </p>
+                    <p>seleccione una opcion</p>
+                    <input type="radio" name="opcion" value="1">Hombre
+                    <input type="radio" name="opcion" value="2">Mujer
+                    <input type="radio" name="opcion" value="3">No binario
+                    <p>Estudios
+                        <select name="Estudios" id="Estudios">
+                            <option value="1">Primario</option>
+                            <option value="2">Secundario</option>
+                            <option value="3">Terciario</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <input type="submit" onclick="return enviarFormulario()" value="Enviar">
+                <textarea name="comentarios" id="" cols="30" rows="10">Comentarios</textarea>
+                <div id="error"></div>
+            </form>
+        </main>
+    </div>
+    <footer>
+        <i class='bx bxl-whatsapp'></i>
+        <i class='bx bxl-instagram'></i>
+        <i class='bx bxl-facebook'></i>
+        <p>Derechos&Reservados</p>
+        <p>2023</p>
+    </footer>
+    <script src="js/validaciones.js">   </script>
+</body>
+</html>
