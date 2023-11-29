@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+body{
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    scroll-behavior: auto;
+    /* background-color: #ffffff; */
+} 
+.heder{
+    background-color: #000;
+    transition: background-color 0.5s linear ;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0.5px;
+} 
+.heder:hover{
+    background-color: #049ef7;
+}
+.nav:hover{
+    background-color: #049ef7;
+}
+ ul, li{
+    list-style: none;
+}
+.nav li a{
+    background-color:#000;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 1.5em;
+} 
+.nav li a:hover{
+    background-color: #049ef7;
+}
+.nav > li{
+    float: left;
+}
+.nav li ul{
+    display:none ;
+    position: absolute;
+    
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+.buscar {
+    width: 50%;
+    height: 70%;
+    padding: 14px 28px; 
+    border: none; 
+    color: black;
+    cursor: pointer; 
+    border-radius: 5px; 
+
+} 
+a{
+    background-color: #000;
+}
+.entrada-blog :hover > a{
+    background-color: #0088ff;
+}
+
+.btn {
+    border: none; 
+    color: black; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+  }
+.btn {background-color: white; border: 2px solid #04AA6D;} 
+.btn:hover {background-color: #46a049; color: white;}
+.buscar {background-color: #e7e7e7; color: black;} 
+.buscar:hover {background: #ddd;}
+.carousel{
+    background-size: cover;
+    z-index: -1;
+}
+iframe{
+    padding: 0px 50px 50px 50px;
+    width: 60%;
+}
+table{
+    border: black 2px 2px 2px solid;
+    margin: 30px 50px 50px 50px;
+}
+td{
+    padding: 5px;
+}
+.ubicacion{
+    padding: 50px;
+    margin-top: 100px;
+    text-align: center;
+    color: #007bff;
+
+}
+
+.parrafo {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9f9;
+    width: 30%;
+    margin: 50px;
+    padding: 2px;
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    padding: 50px;
+}
+
+#formulario {
+    max-width: 400px;
+    margin: 100px 50px 100px 50px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+p{
+    color: #ffffff;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+footer{
+    background-color: #000;
+    width: 100%;
+    margin: 100px 0 0 0;
+    padding: 10px 10px 10px 10px;
+    text-align: center
+}

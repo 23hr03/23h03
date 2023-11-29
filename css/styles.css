@@ -72,9 +72,7 @@ li {
 
 }
 
-a {
-        text-shadow: 2px 2px 2px #ff0000;
-}
+
 
 .info-prodct a {
         display: inline-block;
@@ -125,7 +123,7 @@ a {
 }
 .content{
         display: inline-block;
-        background-color: #b8b8b8;
+        background-color: #f9f9f9;
         color: white;
         padding: 20px 20px 20px 20px;
         margin: 20px 20px 20px 20px;
@@ -163,41 +161,40 @@ h3{
         padding: 15px;
 }
 .ubicacion{
-        margin: 50px 200px 0px 200px;
-        border: #000 2px solid;
+        margin: 50px 200px 40px 300px;
         width: 130px;
-        background-color: #b8b8b8 ;
+        color: #007bff;
 }
 img{
         max-width: 700px ;
 }
-
 p{
+        color: #ffffff;
+        font-size: 1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+
+.parrafo{
         color: #000000;
         padding: 10px;
         align-items: first baseline;
 }
-article{
+section{
         margin: 50px 0 50px 0;
-        align-items: center;
-
+}
+iframe{
+        margin-left: 100px;
 }
 h3{
         align-items: center;
 }
-iframe{
-        padding: 50px 50px 50px 50px;
-        
-}
 
 footer{
-        margin: 200px, 0, 0, 0;
-        padding: 15px;
         background-color: #000;
-}
-footer p{
-        color: #ffffff;
-        text-shadow: 2px 2px 2px blue;
-        text-align: center;
-        font-size: 1.5em;
-}
+        width: 100%;
+        margin: 100px 0 0 0;
+        padding: 10px 10px 10px 10px;
+        text-align: center
+    }
+

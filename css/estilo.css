@@ -60,7 +60,6 @@ body{
 
 } 
 a{
-    text-shadow: 2px 2px 2px #ff0000;
     background-color: #000;
 }
 .entrada-blog :hover > a{
@@ -176,6 +175,14 @@ h2{
     font-family: 'Courier New', Courier, monospace;
     font-size: 2em;
     padding: 20px 20px 20px 20px;
+    /* color: #007bff; */
+}
+.h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    padding: 20px 20px 20px 20px;
+    color: #007bff;
+    
 }
 h3{
     color: #ffffff;
@@ -200,7 +207,11 @@ footer{
     text-align: center
 }
 
-@media (max-width: 905px){
+@media ( max-width: 1000px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
     body{
         background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
         scroll-behavior: auto;
@@ -227,7 +238,7 @@ footer{
     .nav li a{
         background-color:#000;
         text-decoration: none;
-        padding: 10px 15px;
+        padding: 5px 10px;
         color: rgb(255, 255, 255);
         display: block;
         font-size: 1.5em;
@@ -248,17 +259,19 @@ footer{
         display: block;
     }
     .buscar {
-        width: 50%;
-        height: 70%;
-        padding: 14px 28px; 
+        width: 40%;
+        height: 60%;
+        padding: 15px 25px; 
         border: none; 
         color: black;
         cursor: pointer; 
         border-radius: 5px; 
     
     } 
+    .form{
+        text-align: center;
+    }
     a{
-        text-shadow: 2px 2px 2px #ff0000;
         background-color: #000;
     }
     .entrada-blog :hover > a{
@@ -404,6 +417,10 @@ footer{
 
 
 @media (max-width: 900px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
     
     body{
         background-image: linear-gradient(to top, #63bdea 0%, #63bdea  99%,  #63bdea 100%);
@@ -425,22 +442,25 @@ footer{
         padding: 3px;
     }
     .nav{
-        padding: 5px 10px 0 10px;
+        padding: 3px 5px 0 5px;
         margin-top: 15px;
     }
     .nav li a{
         background-color:#000;
         text-decoration: none;
-        padding: 2px 20px ;
+        padding: 5px 20px ;
         color: rgb(255, 255, 255);
         display: block;
         font-size: 1.5em;
         
     } 
+    .form{
+        text-align: center;
+    }
     .buscar {
-        width: 60%;
-        height: 40%;
-        margin-top: 6px;
+        width: 40%;
+        height: 50%;
+        margin-top: 10px;
         padding: 2px 2px; 
         border: none; 
         color: black;
@@ -449,7 +469,8 @@ footer{
     
     } 
     .btn {
-        width: 50%;
+        width: 40%;
+        height: 40%;
         margin-top: 4px;
         border: none; 
         color: black; 
@@ -502,9 +523,118 @@ footer{
       }
 }
 
+@media (max-width: 899px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    body{
+        background-image: linear-gradient(to top, #63bdea 0%, #63bdea  99%,  #63bdea 100%);
+    }
+    .heder{
+        background-color: #000;
+        transition: background-color 0.5s linear ;
+        display: grid;
+        grid-template-areas: "logo nav nav";
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative; 
+        
+    }
+    .heder:hover{
+        background-color: #0088ff;
+    }
+    .logo{
+        padding: 3px;
+    }
+    .nav{
+        padding: 3px 5px 0 5px;
+        margin-top: 15px;
+    }
+    .nav li a{
+        background-color:#000;
+        text-decoration: none;
+        padding: 5px 10px ;
+        color: rgb(255, 255, 255);
+        display: block;
+        font-size: 1.2em;
+        
+    } 
+    .form{
+        text-align: center;
+    }
+    .buscar {
+        width: 40%;
+        height: 50%;
+        margin-top: 15px;
+        padding: 2px 2px; 
+        border: none; 
+        color: black;
+        cursor: pointer; 
+        border-radius: 5px; 
+    
+    } 
+    .btn {
+        width: 40%;
+        height: 40%;
+        margin-top: 4px;
+        border: none; 
+        color: black; 
+        padding: 5px 2px 0 5px; 
+        cursor: pointer; 
+        border-bottom: 2px; 
+      }
 
+    .contenedor{
+        margin: 100px 70px 70px 0px;
+    }
+    #parrafo{
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        padding: 10px 10px 10px 10px;
+        margin: 10px;
+    }
+  
+    .texto{
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    iframe{
+        margin: 50px 15px 50px 15px;
+        width: 500px;
+        height: 250px;
+    
+    }
+    main p{
+        padding: 2px 2px 2px 2px;
+        font-size: 1.2em;
+        font-family:Arial, Helvetica, sans-serif;
+        color: #ffffff;
+    }
+    #contenedor1{
+        background-size: cover;
+        width: 100%;
+        height: 50%;
+        border: 2px ;
+    
+    } 
+    .h{
+      font-size: 20px;
+       padding: 5px;
+        
+    }
+    p{
+        font-size: 1em;
+      }
+}
 
-@media (max-width: 760px){
+@media (max-width: 800px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
     
     body{
         background-image: linear-gradient(to top, #63bdea 0%, #63bdea  99%,  #63bdea 100%);
@@ -607,8 +737,11 @@ footer{
 }
 
 
-@media (max-width: 600px){
-    
+@media (max-width: 704px ) {
+    *{
+        margin: 0;
+        padding: 0;
+    }    
     body{
         background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
     }
@@ -642,7 +775,7 @@ footer{
         
     } 
     .buscar {
-        width: 60%;
+        width: 50%;
         height: 40%;
         margin-top: 6px;
         padding: 2px 2px; 
@@ -653,8 +786,8 @@ footer{
     
     } 
     .btn {
-        width: 50%;
-        margin-top: 4px;
+        width: 40%;
+        margin-top: 20px;
         border: none; 
         color: black; 
         padding: 5px 2px 0 5px; 

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <title>Formulario</title>
+</head>
+<body>
+    
+<body>
+    <heder class="heder">
+        <div class="logo">
+            <img src="img/f3454041467c242474a15d357a56e4c4.jpeg" alt="logo" width="100">
+        </div>
+        <nav >
+            <ul class="nav">
+                <li><a class="inicio" href="index.htm">Inicio</a></li>
+                <li><a class="marcas" href="producto.htm">Marcas</a></li>
+                <li><a href="servicios.htm">Servicios</a></li>
+                <li> <a href="contacto.htm">Contacto</a></li>            
+            </ul>
+        </nav>
+        <form class="form" role="search">
+            <input class="buscar" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn success" type="submit">Buscar</button>
+        </form>
+    </heder>
+
+   
+    <h1>Formulario de registro</h1>
+
+    <form id="formulario" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"><br>
+
+        <label for="e-mail">Gmail:</label>
+        <input type="email" id="e-mail" name="e-mail"  placeholder="Ingrese su correo ">
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" placeholder="Ingrese su DNI"><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" placeholder="Ingrese su direccion"><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <script src="js/validaciones.js"></script>
+
+    <section>
+        <h1 class="ubicacion">Ubicacion</h1>
+        <p class="parrafo"> Nos encontramos cerca del parque rivadavia. Te esperamos</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4579818275706!2d-58.43577602425916!3d-34.61786507294921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca440ec19097%3A0x30b34282ae8fae18!2sParque%20Rivadavia!5e0!3m2!1ses-419!2sar!4v1692921783945!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <table>
+            <tr> 
+                <th>Dia</th>
+                <th>Hora</th>
+            </tr>
+            <tr>
+                <td >Lunes</td>
+                <td >8:30am  hasta  8:00pm</td>
+            </tr>
+            <tr>
+                <td>Martes</td>
+                <td>8:30am  hasta  8:00pm</td>
+            </tr>
+            <tr>
+                <td>Miercoles</td>
+                <td>8:30am  hasta  8:00pm</td>
+            </tr>
+            <tr>
+                <td>Jueves</td>
+                <td>8:30am  hasta  8:00pm</td>
+            </tr>
+            <tr>
+                <td>Viernes</td>
+                <td>8:30am  hasta  8:00pm</td>
+            </tr>
+            <tr>
+                <td>Sabados</td>
+                <td>9:30am  hasta  6:00pm</td>
+            </tr>
+        </table>
+    </section>
+    <footer class="foter">
+        <p> Todos los derechos reservados. Mapa del sitio TÉRMINOS Y CONDICIONES DE USO Y POLÍTICA DE PRIVACIDAD</p>
+        
+        <p>El contenido de este sitio web no debe ser considerado una oferta y puede ser actualizado en forma total o parcial sin previo aviso y sin incurrir en ninguna obligación. Los precios detallados son sugeridos por la agencia de autos a su red de concesionarios oficiales. Los concesionarios son empresas independientes y quienes pactaran los precios finales con los clientes. Las imágenes publicadas son de carácter ilustrativo. Ford Argentina S.C.A. French 3155, 1er Piso, Ciudad de Buenos Aires.</p>
+        
+        <p> Nuestro Whatsapp<i class="bx bxl-whatsapp bx-tada bx-lg" style="color:#01ea06"  ></i></p>
+        <p>Siguenos por nuestras redes 
+            <iconify-icon icon="devicon:facebook" width="40"></iconify-icon>
+            <i class='bx bxl-youtube bx-lg' style='color:#fb0105'  ></i>
+            <iconify-icon icon="skill-icons:instagram" width="40"></iconify-icon>
+        </p>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    </footer>
+</body>
+</html>
