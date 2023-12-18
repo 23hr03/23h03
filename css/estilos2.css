@@ -6,7 +6,6 @@
 body{
     background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
     scroll-behavior: auto;
-    /* background-color: #ffffff; */
 } 
 .heder{
     background-color: #000;
@@ -82,26 +81,25 @@ a{
     background-size: cover;
     z-index: -1;
 }
-iframe{
-    padding: 0px 50px 50px 50px;
-    width: 60%;
+
+.contenedor-centrado {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
-table{
-    border: black 2px 2px 2px solid;
-    margin: 30px 50px 50px 50px;
-}
-td{
-    padding: 5px;
-}
-.ubicacion{
-    padding: 50px;
-    margin-top: 100px;
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
     text-align: center;
     color: #007bff;
-
 }
-
-.parrafo {
+.parrafo{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f9f9f9;
     width: 30%;
@@ -109,16 +107,18 @@ td{
     padding: 2px;
     color: #000;
 }
-
-h1 {
-    text-align: center;
-    color: #007bff;
-    padding: 50px;
-}
-
-#formulario {
+form {
     max-width: 400px;
-    margin: 100px 50px 100px 50px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    }
+
+table {
+    max-width: 90%;
+    margin: 0 auto;
     padding: 20px;
     background-color: white;
     border: 1px solid lightslategray;
@@ -131,8 +131,7 @@ label {
 }
 
 input[type="text"],
-input[type="email"],
-input[type="tel"],
+input[type="number"],
 textarea {
     width: 90%;
     padding: 10px;
@@ -153,11 +152,22 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+#boton {
+
+    padding: 8px;
+    margin: 4px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointe
+}
 p{
     color: #ffffff;
     font-size: 1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+
 }
 footer{
     background-color: #000;
@@ -165,17 +175,4 @@ footer{
     margin: 100px 0 0 0;
     padding: 10px 10px 10px 10px;
     text-align: center
-}
-table {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid lightslategray;
-    border-radius: 5px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
 }

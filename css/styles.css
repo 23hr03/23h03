@@ -1,4 +1,4 @@
- *{
+*{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -175,11 +175,7 @@ p{
     
     }
 
-.parrafo{
-        color: #000000;
-        padding: 10px;
-        align-items: first baseline;
-}
+
 section{
         margin: 50px 0 50px 0;
 }
@@ -193,7 +189,7 @@ h3{
 footer{
         background-color: #000;
         width: 100%;
-        margin: 100px 0 0 0;
+        margin: 500px 0 0 0;
         padding: 10px 10px 10px 10px;
         text-align: center
     }

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Vende tu auto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <link rel="shortcut icon" href="favicoin/—Pngtree—red sports car vector_2790711.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <heder class="heder">
+        <div class="logo">
+            <img src="img/f3454041467c242474a15d357a56e4c4.jpeg" alt="logo" width="100">
+        </div>
+        <nav>
+            <ul class="nav">
+                <li><a class="inicio" href="index.htm">Inicio</a></li>
+                <li><a class="marcas" href="producto.htm">Marcas</a></li>
+                <li><a href="servicios.htm">Servicios</a></li>
+                <li> <a href="contacto.htm">Contacto</a></li>
+                <li><a href="productos.htm">Vende tu auto</a></li>
+            </ul>
+        </nav>
+    </heder>
+
+    <br>
+    <p class="parrafo">En este espacio podras ofrecer tu auto en venta
+        Te ofrecemos este espacio para ti que quieres vender tu auto y no consigues como hacerlo
+        ingresa los datos de tu vehiculo y espera por un comprador te avisaremos via Gmail
+    </p>
+    <main>
+        <div id="app" class="container">
+            <h1>Vende tu auto</h1>
+            <br>
+            <a class="btn btn-primary" href="producto_nuevo.htm">Agregar auto en venta</a>
+            <br><br>
+
+            <div v-if="error">
+                <p>Lo sentimos , ........</p>
+            </div>
+
+            <p class="parrafo">Publica tu automovil y en pocos dias estar vendido</p>
+            <div v-else>
+                <section v-if="cargando">
+                    <div class="spinner-border"></div>
+                    <p>Cargando .....</p>
+                </section>
+                <section v-else>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Stock</th>
+                                    <th scope="col">marca</th>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="" v-for="producto in productos">
+                                    <td scope="row">{{producto.id}}</td>
+                                    <td>{{producto.nombre}}</td>
+                                    <td>{{producto.precio}}</td>
+                                    <td>{{producto.stock}}</td>
+                                    <td>{{producto.marca}}</td>
+                                    <td>
+                                        <img width="60" :src="producto.imagen" :alt="producto.nombre">
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-primary"
+                                            :href="'producto_update.htm?id='+ producto.id">Editar</a>
+                                        <button type="button" class="btn btn-danger"
+                                            v-on:click="eliminar(producto.id)">Eliminar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <br><br><br>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+    <script src="js/productos.js"></script>
+    <script src="js/main.js"></script>
+
+    <footer class="foter">
+        <p> Todos los derechos reservados. Mapa del sitio TÉRMINOS Y CONDICIONES DE USO Y POLÍTICA DE PRIVACIDAD</p>
+        
+        <p>El contenido de este sitio web no debe ser considerado una oferta y puede ser actualizado en forma total o parcial sin previo aviso y sin incurrir en ninguna obligación. Los precios detallados son sugeridos por la agencia de autos a su red de concesionarios oficiales. Los concesionarios son empresas independientes y quienes pactaran los precios finales con los clientes. Las imágenes publicadas son de carácter ilustrativo. Ford Argentina S.C.A. French 3155, 1er Piso, Ciudad de Buenos Aires.</p>
+        
+        <p> Nuestro Whatsapp<i class="bx bxl-whatsapp bx-tada bx-lg" style="color:#01ea06"  ></i></p>
+        <p>Siguenos por nuestras redes 
+            <iconify-icon icon="devicon:facebook" width="40"></iconify-icon>
+            <i class='bx bxl-youtube bx-lg' style='color:#fb0105'  ></i>
+            <iconify-icon icon="skill-icons:instagram" width="40"></iconify-icon>
+        </p>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    </footer>
+</body>
+</html>
